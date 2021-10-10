@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Travel Landing Page </title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <div class="logoimg">
+                <a href="Home/Home.html" target="_blank">
+                    <img src="images/logo.png" alt="logo" srcset="" height="100px" width="100px"></a>
+            </div>
+
+            <h2 class="logo">Travel</h2>
+            <div class="toggle "></div>
+        </header>
+        <video src="/images/Pexels Videos 1321208.mp4" autoplay muted loop></video>
+
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop git --</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint exercitationem minus aliquam. At eos qui
+                praesentium ipsum error blanditiis veniam!</p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="/images/facebook-new.png" alt="facebook " srcset=" " height="45px"
+                        width="45px"></a> </li>
+            <li><a href="#" class="instagram"><img src="/images/instagram.png" alt="instagram " srcset=" " height="45px"
+                        width="45px"></a> </li>
+            <li><a href="#"><img src="/images/twitter.png" alt="twitter" srcset=" " height="45px" width="45px"></a>
+            </li>
+
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="Home/Home.html" target="_blank">Home</a></li><br>
+            <li><a href="news/news.html" target="_blank">News</a></li><br>
+            <li><a href="destination/destination.html" target="_blank">Destination</a></li><br>
+            <li><a href="Blogs/blogs.html" target="_blank">Blogs</a></li><br>
+            <li><a href="contacts/contact.html" target="_blank">Contact</a></li><br>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+
+</body>
+
+</html>
